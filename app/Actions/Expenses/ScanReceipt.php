@@ -115,7 +115,6 @@ final class ScanReceipt
     }
 
     /**
-     * @param  mixed  $items
      * @return list<array{name: string, amount: int}>
      */
     private function normalizeLineItems(mixed $items): array

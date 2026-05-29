@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 use App\Livewire\Notifications\Bell;
+use App\Models\FriendRequest;
 use App\Models\User;
 use App\Notifications\FriendRequestReceived;
-use App\Models\FriendRequest;
 use Livewire\Livewire;
 
 it('renders the bell with the correct unread count for the current user', function () {

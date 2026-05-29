@@ -59,9 +59,9 @@ function something()
  * test method does not actually re-authenticate. Forgetting the guards between
  * calls forces Sanctum to resolve the new bearer token freshly.
  */
-function actingAsToken(string $token): Tests\TestCase
+function actingAsToken(string $token): TestCase
 {
-    /** @var Tests\TestCase $tc */
+    /** @var TestCase $tc */
     $tc = test();
     app('auth')->forgetGuards();
 
